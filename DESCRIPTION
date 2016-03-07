@@ -1,0 +1,10 @@
+Package: CosW
+Type: Package
+Title: The CosW Distribution
+Version: 0.1
+Date: 2015-11-12
+Author: Luciano Serafim [aut, cre]
+Maintainer: Luciano Serafim de Souza <lucianoserafimdesouza@gmail.com>
+Description: Density, distribution function, quantile function, random generation and survival function.
+License: GPL (>= 2)
+LazyData: TRUE
