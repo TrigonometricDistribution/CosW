@@ -13,8 +13,7 @@
 rcosw<-function(n,alpha = 1,lambda){
   library(pracma)
   if (alpha == 1){
-    y=(acos(1-0.999999999))
-    limsup = (-1/lambda)*(log((1-((2/pi)*y))))^(1/alpha)
+    limsup = (-1/lambda)*(log((2/pi)*(asin(1-0.999999999))))^(1/alpha)
     accept = c()
     count = 0
     while (length(accept) < n){
