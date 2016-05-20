@@ -1,31 +1,28 @@
-# rcosw
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
+#' Generates random deviates from a CosWeibull probability distribution.
+#'
+#' @param n Number of observations to be generated.
+#' @param alpha Alpha parameter.
+#' @param lambda Lambda parameter.
+#' @return A vector with n observations of the CosWeibull distribution.
+#' @examples
+#' rcosw(1, alpha = 1, 1)
+#' rcosw(1, alpha = 1, 0.1)
 
-rcosw<-function(n,alpha = 1,lambda){
+rcosw<-function(n,alpha,lambda){
   library(pracma)
-  if (alpha == 1){
-    limsup = (-1/lambda)*(log((2/pi)*(asin(1-0.999999999))))^(1/alpha)
+  library(fdrtool)
+
     accept = c()
     count = 0
     while (length(accept) < n){
-      u = runif(1,0,limsup)
-      x = runif(1,0,limsup)
-      if(dunif(x, 0, limsup)*u <= dcosw(x,alpha,lambda)) {
+
+      U <- rhalfnorm(1)
+      x <- rhalfnorm(1)
+
+      if(U <= dcosw(x, alpha, theta)/(sqrt(pi)*dhalfnorm(x)/sqrt(2))) {
         accept[count] = x
         count = count + 1
       }
     }
     return(accept)
-  }else{
-    print("The default value for the alpha parameter must be equal to 1.")
-  }
 }
