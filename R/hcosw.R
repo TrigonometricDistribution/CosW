@@ -1,14 +1,12 @@
-# hcosw
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
+#' The hazard function of the CosWeibull probability distribution.
+#'
+#' @param x Vector of quantiles..
+#' @param alpha Alpha parameter.
+#' @param lambda Lambda parameter.
+#' @return A vector with n observations of the CosWeibull distribution.
+#' @examples
+#' hcosw(x,1.5,2)
+#' hcosw(x,2,0.5)
 
 hcosw<-function(x,alpha,lambda){
   library(stats)

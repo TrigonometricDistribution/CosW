@@ -5,8 +5,8 @@
 #' @param lambda Lambda parameter.
 #' @return A vector with n observations of the CosWeibull distribution.
 #' @examples
-#' rcosw(1, alpha = 1, 1)
-#' rcosw(1, alpha = 1, 0.1)
+#' rcosw(1000,1,1)
+#' rcosw(1000,1,0.1)
 
 rcosw<-function(n,alpha,lambda){
   library(pracma)

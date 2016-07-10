@@ -5,23 +5,19 @@
 \alias{qcosw}
 \alias{rcosw}
 \alias{scosw}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
 The Cosine Weibull distribution
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
 Density, distribution function, quantile function, random generation and survival function for the sine weibull inverse distribution with.
 }
 \usage{
 dcosw(x, alpha, theta)
-pcosw(q, alpha, theta, lower = T, log.p = FALSE)
-qcosw(p, alpha, theta, lower = T, log.p = FALSE)
+pcosw(q, alpha, theta, lower = TRUE, log.p = FALSE)
+qcosw(p, alpha, theta, lower = TRUE, log.p = FALSE)
 rcosw(n, alpha, theta)
 scosw(x, alpha, theta)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x, q}{
   vector of quantiles.
@@ -32,7 +28,7 @@ scosw(x, alpha, theta)
   \item{n}{
   number of observations. If length(n) > 1, the length is taken to be the number required.
   }
-  \item{alpha, theta}{
+  \item{alpha, lambda}{
   parameters.
   }
   \item{log.p}{
@@ -43,15 +39,9 @@ scosw(x, alpha, theta)
   }
 }
 \details{
-%%  ~~ If necessary, more details than the description above ~~
-Detalhes.
+If lower or log.p are not specified they assume the default values of TRUE and FALSE, respectively.
 }
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
 dcosw gives the density, pcosw gives the distribution function, qcosw gives the quantile function, rcosw generates random deviates and scosw gives the survival function.
 
 The length of the result is determined by n for rcosw, and is the maximum of the lengths of the numerical arguments for the other functions.
@@ -59,28 +49,20 @@ The length of the result is determined by n for rcosw, and is the maximum of the
 The numerical arguments other than n are recycled to the length of the result.
 }
 \references{
-%% ~put references to the literature/web site here ~
-Referencias.
+SOUZA, L. New Trigonometric Class of Probabilistic Distributions. 219 p. Thesis (Doctorate in Biometry and Applied Statistics) - Department of Statistics and Information, Federal Rural University of Pernambuco, Recife, Pernambuco, 2015.
+
+BRITO, C. C. R. Method Distributions generator and Probability Distributions Classes. 241 p. Thesis (Doctorate in Biometry and Applied Statistics) - Department of Statistics and Information, Federal Rural University of Pernambuco, Recife, Pernambuco, 2014.
 }
 \author{
-%%  ~~who you are~~
-Autores.
+Dr. Luciano Souza, Luciano Serafim de Souza and Ms. Lucas Gallindo.
 }
-\note{
-%%  ~~further notes~~
-Nota.
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-Ajuda.
+
+The \href{https://stat.ethz.ch/R-manual/R-devel/library/stats/html/Weibull.html}{weibull} distribution.
+
 }
 \examples{
-## The function is currently defined as
 x = rcosw(100, 1, 0.5)
-hist(x, probability = TRUE, ylim = c(0,1))
-curve(dcosw(x, 1, 0.5),add = T)
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
+hist(x,probability = T,border = 0,ylim = c(0,2),main = "",ylab = "Density",lty = 2,lwd=2)
+curve(dcosw(x,1,0.5),add = T,lty=1,lwd=2,col=1)

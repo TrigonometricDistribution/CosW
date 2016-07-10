@@ -1,14 +1,14 @@
-# qcosw
+# The quantile function of the CosWeibull probability distribution.
 #
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
+#' @param p Vector of probabilities.
+#' @param alpha Alpha parameter.
+#' @param lambda Lambda parameter.
+#' @param lower Lower parameter.
+#' @param log.p Log.p parameter.
+#' @return A vector with n observations of the CosWeibull distribution.
+#' @examples
+#' qcosw(1, 1, 1, TRUE, FALSE)
+#' qcosw(1, 1, 0.1, TRUE, FALSE)
 
 qcosw<-function(p,alpha = 1,lambda,lower = TRUE,log.p = FALSE){
   library(stats)
