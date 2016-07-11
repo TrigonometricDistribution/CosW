@@ -37,7 +37,7 @@ scosw(x, alpha, lambda)
   logical; if TRUE, probabilities p are given as log(p).
   }
   \item{lower}{
-  logical; if TRUE (default), probabilities are P[X ≤ x], otherwise, P[X > x].
+  logical; if TRUE (default), probabilities are \eqn{P[X \leq x]}, otherwise, \eqn{P[X > x]}.
   }
 }
 \details{
@@ -68,3 +68,5 @@ The \href{https://stat.ethz.ch/R-manual/R-devel/library/stats/html/Weibull.html}
 x = rcosw(100, 1, 0.5)
 hist(x,probability = TRUE,border = 0,ylim = c(0,2),main = "",ylab = "Density",lty = 2,lwd=2)
 curve(dcosw(x,1,0.5),add = TRUE,lty=1,lwd=2,col=1)
+
+}

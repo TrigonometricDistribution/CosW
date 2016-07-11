@@ -9,5 +9,5 @@
 #' hcosw(x,2,0.5)
 
 hcosw<-function(x,alpha,lambda){
-  (pi/2)*alpha*(lambda^(alpha))*(x^(alpha-1))*exp(-(lambda*x)^alpha)*cot((pi/2)*exp(-(lambda*x)^alpha))
+  (pi/2)*alpha*(lambda^(alpha))*(x^(alpha-1))*exp(-(lambda*x)^alpha)*pracma::cot((pi/2)*exp(-(lambda*x)^alpha))
 }

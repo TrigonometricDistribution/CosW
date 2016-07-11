@@ -1,4 +1,5 @@
 # The quantile function of the CosWeibull probability distribution.
+#' @export
 #
 #' @param p Vector of probabilities.
 #' @param alpha Alpha parameter.
@@ -11,8 +12,6 @@
 #' qcosw(1, 1, 0.1, TRUE, FALSE)
 
 qcosw<-function(p,alpha = 1,lambda,lower = TRUE,log.p = FALSE){
-  library(stats)
-  library(pracma)
 
   if (alpha == 1){
     if (log.p == TRUE) {

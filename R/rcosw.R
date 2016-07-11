@@ -1,4 +1,5 @@
-#' Generates random deviates from a CosWeibull probability distribution.
+# Generates random deviates from a CosWeibull probability distribution.
+#' @export
 #'
 #' @param n Number of observations to be generated.
 #' @param alpha Alpha parameter.
@@ -14,10 +15,10 @@ rcosw<-function(n,alpha,lambda){
     count = 0
     while (length(accept) < n){
 
-      U <- rhalfnorm(1)
-      x <- rhalfnorm(1)
+      U <- fdrtool::rhalfnorm(1)
+      x <- fdrtool::rhalfnorm(1)
 
-      if(U <= dcosw(x, alpha, lambda)/(sqrt(pi)*dhalfnorm(x)/sqrt(2))) {
+      if(U <= dcosw(x, alpha, lambda)/(sqrt(pi)*fdrtool::dhalfnorm(x)/sqrt(2))) {
         accept[count] = x
         count = count + 1
       }
