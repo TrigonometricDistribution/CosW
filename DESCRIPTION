@@ -9,5 +9,6 @@ Authors@R: c(person("Luciano", "Souza", role = "aut",email = "lcnsza@gmail.com")
 Author: Luciano Serafim de souza [aut, cre], Luciano Souza [aut], Lucas Gallindo [aut]
 Maintainer: Luciano Serafim de Souza <lucianoserafimdesouza@gmail.com>
 Description: Density, distribution function, quantile function, random generation and survival function.
+Depends: R (>= 3.0.1), pracma, stats, fdrtool
 License: GPL (>= 2)
 LazyData: TRUE

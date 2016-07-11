@@ -1,5 +1,5 @@
 \name{CosW}
-%\alias{CosW}
+\alias{CosW}
 \alias{dcosw}
 \alias{pcosw}
 \alias{qcosw}
@@ -17,7 +17,7 @@ dcosw(x, alpha, lambda)
 pcosw(q, alpha, lambda, lower = TRUE, log.p = FALSE)
 qcosw(p, alpha, lambda, lower = TRUE, log.p = FALSE)
 rcosw(n, alpha, lambda)
-hcosw(n, alpha, lambda)
+hcosw(x, alpha, lambda)
 scosw(x, alpha, lambda)
 }
 \arguments{

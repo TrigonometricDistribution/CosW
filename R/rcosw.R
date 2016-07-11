@@ -9,8 +9,6 @@
 #' rcosw(1000,1,0.1)
 
 rcosw<-function(n,alpha,lambda){
-  library(pracma)
-  library(fdrtool)
 
     accept = c()
     count = 0
