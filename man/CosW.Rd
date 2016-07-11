@@ -1,9 +1,10 @@
 \name{CosW}
-\alias{CosW}
+%\alias{CosW}
 \alias{dcosw}
 \alias{pcosw}
 \alias{qcosw}
 \alias{rcosw}
+\alias{hcosw}
 \alias{scosw}
 \title{
 The Cosine Weibull distribution
@@ -12,11 +13,12 @@ The Cosine Weibull distribution
 Density, distribution function, quantile function, random generation and survival function for the sine weibull inverse distribution with.
 }
 \usage{
-dcosw(x, alpha, theta)
-pcosw(q, alpha, theta, lower = TRUE, log.p = FALSE)
-qcosw(p, alpha, theta, lower = TRUE, log.p = FALSE)
-rcosw(n, alpha, theta)
-scosw(x, alpha, theta)
+dcosw(x, alpha, lambda)
+pcosw(q, alpha, lambda, lower = TRUE, log.p = FALSE)
+qcosw(p, alpha, lambda, lower = TRUE, log.p = FALSE)
+rcosw(n, alpha, lambda)
+hcosw(n, alpha, lambda)
+scosw(x, alpha, lambda)
 }
 \arguments{
   \item{x, q}{
@@ -64,5 +66,5 @@ The \href{https://stat.ethz.ch/R-manual/R-devel/library/stats/html/Weibull.html}
 }
 \examples{
 x = rcosw(100, 1, 0.5)
-hist(x,probability = T,border = 0,ylim = c(0,2),main = "",ylab = "Density",lty = 2,lwd=2)
-curve(dcosw(x,1,0.5),add = T,lty=1,lwd=2,col=1)
+hist(x,probability = TRUE,border = 0,ylim = c(0,2),main = "",ylab = "Density",lty = 2,lwd=2)
+curve(dcosw(x,1,0.5),add = TRUE,lty=1,lwd=2,col=1)

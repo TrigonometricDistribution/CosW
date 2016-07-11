@@ -19,7 +19,7 @@ rcosw<-function(n,alpha,lambda){
       U <- rhalfnorm(1)
       x <- rhalfnorm(1)
 
-      if(U <= dcosw(x, alpha, theta)/(sqrt(pi)*dhalfnorm(x)/sqrt(2))) {
+      if(U <= dcosw(x, alpha, lambda)/(sqrt(pi)*dhalfnorm(x)/sqrt(2))) {
         accept[count] = x
         count = count + 1
       }
