@@ -8,8 +8,8 @@
 #' @param log.p Log.p parameter.
 #' @return A vector with n observations of the CosWeibull distribution.
 #' @examples
-#' pcosw(q,1,1,lower = TRUE,log.p = FALSE)
-#' pcosw(q,1.5,1,lower = TRUE,log.p = FALSE)
+#' pcosw(0.5,1,1,lower = TRUE,log.p = FALSE)
+#' pcosw(0.5,1.5,1,lower = TRUE,log.p = FALSE)
 
 pcosw<-function(q,alpha,lambda,lower = TRUE,log.p = FALSE){
 
@@ -26,5 +26,4 @@ pcosw<-function(q,alpha,lambda,lower = TRUE,log.p = FALSE){
       (sin((pi/2)*exp(-(lambda*q)^alpha)))
     }
   }
-
 }

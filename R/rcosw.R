@@ -1,4 +1,4 @@
-# Generates random deviates from a CosWeibull probability distribution.
+#' Generates random deviates from a CosWeibull probability distribution.
 #' @export
 #'
 #' @param n Number of observations to be generated.

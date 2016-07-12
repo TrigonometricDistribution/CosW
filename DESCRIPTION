@@ -2,7 +2,7 @@ Package: CosW
 Type: Package
 Title: The CosW Distribution
 Version: 0.1
-Date: 2016-07-11
+Date: 2016-07-10
 Authors@R: c(person("Luciano", "Souza", role = "aut",email = "lcnsza@gmail.com"),
              person("Lucas", "Gallindo", role = "aut", email = "lgallindo@gmail.com"),
              person("Luciano", "Serafim de Souza", role = c("aut", "cre"),email = "lucianoserafimdesouza@gmail.com"))

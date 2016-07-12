@@ -1,6 +1,6 @@
-# The quantile function of the CosWeibull probability distribution.
+#' The quantile function of the CosWeibull probability distribution.
 #' @export
-#
+#'
 #' @param p Vector of probabilities.
 #' @param alpha Alpha parameter.
 #' @param lambda Lambda parameter.
