@@ -1,5 +1,7 @@
 #' Generates random deviates from a CosWeibull probability distribution.
 #' @export
+#' importFrom fdrtools dhalfnorm
+#' importFrom fdrtools rhalfnorm
 #'
 #' @param n Number of observations to be generated.
 #' @param alpha Alpha parameter.
