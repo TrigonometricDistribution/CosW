@@ -7,7 +7,7 @@
 dcosw(x, alpha, lambda)
 }
 \arguments{
-\item{x}{Vector of quantiles..}
+\item{x}{Vector of quantiles.}
 
 \item{alpha}{Alpha parameter.}
 

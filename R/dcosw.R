@@ -1,7 +1,7 @@
 #' The probability density function of the CosWeibull probability distribution.
 #' @export
 #'
-#' @param x Vector of quantiles..
+#' @param x Vector of quantiles.
 #' @param alpha Alpha parameter.
 #' @param lambda Lambda parameter.
 #' @return A vector with n observations of the CosWeibull distribution.
