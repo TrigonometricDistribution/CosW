@@ -1,5 +1,8 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^data-raw$
 
 # By Lucas
 expurgo
+R/packaging.R
+^packaging.R$

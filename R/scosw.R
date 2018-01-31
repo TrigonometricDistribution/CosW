@@ -1,5 +1,6 @@
 #' The survival function of the CosWeibull probability distribution.
 #' @export
+#' @family Cosine-Weibull distribution utilities
 #'
 #' @param x Vector of quantiles..
 #' @param alpha Alpha parameter.

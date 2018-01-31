@@ -1,5 +1,6 @@
 #' The cumulative density function of the CosWeibull probability distribution.
 #' @export
+#' @family Cosine-Weibull distribution utilities
 #'
 #' @param q Vector of quantiles.
 #' @param alpha Alpha parameter.

@@ -1,5 +1,6 @@
 #' Generates random deviates from a CosWeibull probability distribution.
 #' @export
+#' @family Cosine-Weibull distribution utilities
 #' @importFrom fdrtool dhalfnorm
 #' @importFrom fdrtool rhalfnorm
 #'
